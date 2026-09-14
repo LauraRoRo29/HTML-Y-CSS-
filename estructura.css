@@ -1,0 +1,27 @@
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.item {
+  background-color: #f10769;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.grid-a {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-b {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-c {
+  grid-template-columns: repeat(4, 1fr);
+}

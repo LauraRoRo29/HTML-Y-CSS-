@@ -1,0 +1,50 @@
+
+.pagina {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  grid-template-areas:
+    "header  header"
+    "menu    content"
+    "footer  footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #fa90df;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #ff3dc5;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  grid-area: content;
+  background-color: #f50ace;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f30bb9;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .pagina {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "menu"
+      "content"
+      "footer";
+  }
+}

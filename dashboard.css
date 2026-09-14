@@ -1,0 +1,30 @@
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.card {
+ 
+  background-color: #8de7fd;
+  border: 2px solid #0a0ef3;
+  padding: 30px 20px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  
+  
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.card:hover {
+  background-color: #85f885;
+  color: #ffffff;
+  cursor: pointer;
+  transform: translateY(-3px);
+}
